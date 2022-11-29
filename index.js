@@ -81,7 +81,7 @@ app.get('/', async (req, res, next)=>
 
   let result = await db.getAllTasks();
 
-  //let obj = await db.deleteTask('name');
+  
 
   
 
