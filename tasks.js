@@ -7,21 +7,21 @@ const Task =  require('./Task');
 
 function createTask(task)
 {
-    console.log(task);
+  
 
 
 
-    var t = {}
+   // var t = new Task.Task();
 
-    t['id'] = task.id;
-    t['deviceID']= task.deviceID;
-    t['taskType'] = task.taskType;
-    t['FCM'] = task.FCM;
-    t['Coin'] = task.taskInfo.Coin;
-    t['Price']= task.taskInfo.Price;
+   // t['id'] = task.id;
+   // t['deviceID']= task.deviceID;
+  //  t['taskType'] = task.taskType;
+   // t['FCM'] = task.FCM;
+  //  t['Coin'] = task.taskInfo.Coin;
+  //  t['Price']= task.taskInfo.Price;
     
 
-    return knex('tasks').insert(t);
+    return knex('tasks').insert(task);
 
 
 }

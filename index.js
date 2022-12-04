@@ -96,7 +96,10 @@ app.get('/', async (req, res, next)=>
 
 app.post('/', async (req, res, next) =>{
 
+
   const result = await db.createTask(req.body);
+
+
 
   console.log(result);
 
@@ -116,7 +119,7 @@ app.delete('/', (req, res)=>{
 
   let index = req.body
 
-  console.log(index.id);
+  console.log(indexid);
 
   db.deleteTask(Number(index.id));
 
